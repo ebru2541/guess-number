@@ -44,7 +44,11 @@ buton.addEventListener("click", (e) => {
   } else {
     alert("Bir sayı giriniz...");
   }
-
+  input1.addEventListener("keydown", (e) => {
+    if (e.code === "Enter") {
+      buton.click();
+    }
+  });
   input1.value = "";
   input1.focus();
   console.log(input1.value);
