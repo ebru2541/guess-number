@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 3rem;
+  /* height: 100vh; */
+  background-image: url("./colorful-2174045_960_720.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.baslık h4 {
+  padding: 1.5rem;
+}
+
+#inputDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+span {
+  margin-right: 0.7rem;
+}
+p {
+  padding: 0.3rem;
+}
+#inputDiv #input {
+  width: 250px;
+  font-size: 22px;
+  outline: none;
+  text-align: center;
+}
+
+[value="check"] {
+  padding: 0.3rem 1.5rem;
+  border: none;
+  background-color: rgb(157, 209, 246);
+}
+img {
+  width: 300px;
+  margin-top: 2rem;
+  object-fit: cover;
+}
