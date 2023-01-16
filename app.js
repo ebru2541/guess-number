@@ -14,11 +14,6 @@ buton.addEventListener("click", (e) => {
   count--;
   bilme++;
   if (Number(input1.value)) {
-    input1.addEventListener("keydown", (e) => {
-      if (e.code === "Enter") {
-        buton.click();
-      }
-    });
     if (number > input1.value) {
       text.innerHTML = ` <p class="hak"><span>${count}</span> tahmin hakkınız kaldı.</p><p class="artır"><span >${input1.value}</span> <i class="fa-sharp fa-solid fa-arrow-up"></i> </p>`;
       img.style.display = "inline-block";
@@ -54,3 +49,9 @@ buton.addEventListener("click", (e) => {
   input1.focus();
   console.log(input1.value);
 });
+
+//  input1.addEventListener("keydown", (e) => {
+//    if (e.code === "Enter") {
+//      buton.click();
+//    }
+//  });
