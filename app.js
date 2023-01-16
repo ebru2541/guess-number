@@ -16,16 +16,19 @@ buton.addEventListener("click", (e) => {
   if (Number(input1.value)) {
     if (number > input1.value) {
       text.innerHTML = ` <p class="hak"><span>${count}</span> tahmin hakkınız kaldı.</p><p class="artır"><span >${input1.value}</span> <i class="fa-sharp fa-solid fa-arrow-up"></i> </p>`;
+      img.style.display = "inline-block";
       img.src = `./images/images.png`;
       input1.value = "";
     } else if (number < input1.value) {
       text.innerHTML = ` <p class="hak"><span>${count}</span> tahmin hakkınız kaldı.</p><p class="azalt"><span >${input1.value}</span> <i class="fa-sharp fa-solid fa-arrow-down"></i> </p>`;
-      img.src = `./images/Garfield.png`;
+      img.style.display = "inline-block";
+      img.src = `./images/Garfield.jpg`;
       input1.value = "";
     } else if (number == input1.value && count >= 0) {
       inputDiv.style.display = "none";
+      img.style.display = "inline-block";
       img.src = `./images/ayıck.webp`;
-      img.style.marginTop = "0rem";
+      img.style.marginTop = "1rem";
       baslık.style.display = "none";
       text.innerHTML = ``;
     }
@@ -35,6 +38,7 @@ buton.addEventListener("click", (e) => {
       son.innerHTML = ` Tahmin hakkınız bitmiştir...<br>`;
       baslık.style.display = "none";
       text.style.display = "none";
+      img.style.display = "inline-block";
       img.src = `./images/esneme.jpg`;
     }
   } else {
