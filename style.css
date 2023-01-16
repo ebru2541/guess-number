@@ -8,8 +8,10 @@ body {
   font-size: 20px;
   text-align: center;
   margin-top: 3rem;
-  /* height: 100vh; */
-  background-image: url("./colorful-2174045_960_720.png");
+  height: 100vh;
+
+  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
